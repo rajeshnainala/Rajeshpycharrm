@@ -15,3 +15,9 @@ while org_number>0:
     rev_number=(rev_number*10)+a
     org_number=int(org_number/10)
 print("The Reverse of thr given number is :",rev_number)
+#sum of first and last
+number=input("enter a number")
+first_number=number[:1]
+lastnumber=number[3:]
+total=int(first_number)+int(lastnumber)
+print("the sum of first and last digit in number is: ",total)
