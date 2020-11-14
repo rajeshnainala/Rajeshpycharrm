@@ -24,3 +24,17 @@ elif a>=65 and b<45:
 else:
     print("The Student is failed")
 
+#order supply
+stock=int(input("enter stock avilable"))
+order=int(input("enter order by customer"))
+credit=input("enter whether his/her credit is ok in y/n").lower()
+if order<=stock and credit=='y':
+    print("your order is supplied")
+elif order>stock and credit=='y':
+    print("we supplied ",stock,"as per your order and reamining",order-stock,"will be supplied later")
+elif credit=='n':
+    print("to get your order pleaseforst clear the credit")
+else:
+    print("wrong entry")
+
+
